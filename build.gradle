@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'testInRel'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'io.rest-assured',name:'rest-assured',version: '3.0.7'
+    testCompile group: 'io.rest-assured',name:'json-path',version: '3.0.7'
+    testCompile group: 'io.qameta.allure', name: 'allure-junit4', version: '2.6.0'
+    testCompile group: 'io.qameta.allure', name: 'allure-rest-assured', version: '2.6.0'
+}
